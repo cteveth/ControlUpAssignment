@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.controlup.automation</groupId>
-    <artifactId>ControlUo</artifactId>
+    <artifactId>ControlUp</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
