@@ -8,7 +8,7 @@ public enum WeatherApiEndpoints {
         path = _path;
     }
 
-    private String path;
+    private final String path;
 
     public String uri() {
         return "http://api.weatherapi.com/v1" + path;

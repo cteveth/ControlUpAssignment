@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="ContolUp Assignment - Chen Teveth">
+<suite name="ControlUp Assignment - Chen Teveth">
 
     <test name="Part 1 - Metric Conversions">
         <classes>
