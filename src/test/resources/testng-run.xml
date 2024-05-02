@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="ContolUp Assignment - Chen Teveth">
+
+    <test name="Part 1 - Metric Conversions">
+        <classes>
+            <class name="MetricTest">
+                <methods>
+                    <include name="convertCelsiusToFahrenheit"/>
+                    <include name="convertMetersToFeet"/>
+                    <include name="convertOuncesToGrams"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Part 2 - Weather">
+        <classes>
+            <class name="WeatherTest">
+                <methods>
+                    <include name="getCurrentTemperature_Selenium"/>
+                    <include name="getCurrentTemperature_API"/>
+                    <include name="checkTemperatureGap"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
