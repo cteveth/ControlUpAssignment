@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="ContolUp Assignment - Chen Teveth">
+<suite name="ContolUp Assignment - Chen Teveth" preserve-order="true">
 
-    <test name="Part 1 - Metric Conversions">
+    <test name="Part 1 - Metric Conversions" preserve-order="true">
         <classes>
             <class name="MetricTest">
                 <methods>
@@ -15,7 +15,7 @@
         </classes>
     </test>
 
-    <test name="Part 2 - Weather">
+    <test name="Part 2 - Weather" preserve-order="true">
         <classes>
             <class name="WeatherTest">
                 <methods>

@@ -6,7 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.*;
 
-public class MetricTest extends CommonTest{
+public class MetricTest extends CommonTest {
     private static MetricConversionsManager metricConversionsManager;
     private final static Logger logger = LogManager.getLogger(MetricTest.class);
 
@@ -25,34 +25,28 @@ public class MetricTest extends CommonTest{
 
     @Test
     public void convertCelsiusToFahrenheit() {
-        TemperatureConversionPage temperatureConversion = metricConversionsManager.temperatureConversion;
-
         metricConversionsManager.metricConversion.clickTemperatureButton();
-        temperatureConversion.chooseFromCelsiusOption();
-        temperatureConversion.chooseToFahrenheitOption();
-        temperatureConversion.enterTemperature(25);
+        metricConversionsManager.temperatureConversion.chooseFromCelsiusOption();
+        metricConversionsManager.temperatureConversion.chooseToFahrenheitOption();
+        metricConversionsManager.temperatureConversion.enterTemperature(25);
         validateResult("25°C = 77.000°F");
     }
 
     @Test
     public void convertMetersToFeet() {
-        LengthConversionPage lengthConversion = metricConversionsManager.lengthConversion;
-
         metricConversionsManager.metricConversion.clickLengthButton();
-        lengthConversion.chooseFromMetersOption();
-        lengthConversion.chooseToFeetOption();
-        lengthConversion.enterLength(25);
+        metricConversionsManager.lengthConversion.chooseFromMetersOption();
+        metricConversionsManager.lengthConversion.chooseToFeetOption();
+        metricConversionsManager.lengthConversion.enterLength(25);
         validateResult("25m = 82.021ft");
     }
 
     @Test
     public void convertOuncesToGrams() {
-        WeightConversionPage weightConversion = metricConversionsManager.weightConversion;
-
         metricConversionsManager.metricConversion.clickWeightButton();
-        weightConversion.chooseFromOuncesOption();
-        weightConversion.chooseToGramsOption();
-        weightConversion.enterWeight(25);
+        metricConversionsManager.weightConversion.chooseFromOuncesOption();
+        metricConversionsManager.weightConversion.chooseToGramsOption();
+        metricConversionsManager.weightConversion.enterWeight(25);
         validateResult("25oz = 708.74g");
     }
 

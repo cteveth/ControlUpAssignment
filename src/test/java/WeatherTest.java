@@ -26,8 +26,8 @@ public class WeatherTest extends CommonTest {
         getWebDriverInit().navigateTo(URL);
         weatherManager.weatherHome.enterZipCode("20852");
         weatherManager.weatherHome.chooseRockville();
-        weatherManager.weatherHome.changeToCelsiusDegrees();
-        UI_temperature = Double.parseDouble(weatherManager.weatherHome.getCurrentTemperature());
+        weatherManager.rockvilleWeather.changeToCelsiusDegrees();
+        UI_temperature = Double.parseDouble(weatherManager.rockvilleWeather.getCurrentTemperature());
     }
 
     @Test
