@@ -7,8 +7,6 @@ import weather.api.entities.CurrentWeather;
 
 public class WeatherTest extends CommonTest {
 
-    private final String URL = "http://www.weather.com";
-
     private static WeatherManager weatherManager;
 
     private Double UI_temperature;
@@ -23,6 +21,7 @@ public class WeatherTest extends CommonTest {
 
     @Test
     public void getCurrentTemperature_Selenium() {
+        String URL = "http://www.weather.com";
         getWebDriverInit().navigateTo(URL);
         weatherManager.weatherHome.enterZipCode("20852");
         weatherManager.weatherHome.chooseRockville();

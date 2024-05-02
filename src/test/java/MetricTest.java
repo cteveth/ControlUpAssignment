@@ -1,7 +1,4 @@
 import metric_conversions.MetricConversionsManager;
-import metric_conversions.conversion_pages.LengthConversionPage;
-import metric_conversions.conversion_pages.TemperatureConversionPage;
-import metric_conversions.conversion_pages.WeightConversionPage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.*;
